@@ -11,7 +11,22 @@ public class Encryption
         System.out.println("Welcome to the Encryption / Decryption Program");
         
     }
-     public static int add (int a, int b){
-        return a+b;
+          //replacing vowels to special characters-Moishie's part
+    public static String ReplaceVowels(String sentence){
+        String result = sentence.replace('a','@');
+        result = sentence.replace('e','#');
+        result = sentence.replace('i','1');
+        result = sentence.replace('o','0');
+        result = sentence.replace('u','&');
+        return result;
+    }
+    //replacing special characters to vowels-Moishie's part
+    public static String ReplaceSpecialCharacter(String sentence){
+        String result = sentence.replace('@','a');
+        result = sentence.replace('#','e');
+        result = sentence.replace('1','i');
+        result = sentence.replace('0','o');
+        result = sentence.replace('&','u');
+        return result;
     }
 }
